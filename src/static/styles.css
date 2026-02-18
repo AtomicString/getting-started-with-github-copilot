@@ -144,8 +144,8 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0;
   color: #555;
   background-color: #f0f0f0;
   padding: 10px;
@@ -155,9 +155,21 @@ footer {
 
 .participants-list li {
   margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.participants-list .no-participants {
-  font-style: italic;
-  color: #999;
+.unregister-btn {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.unregister-btn:hover {
+  color: #b71c1c;
 }
